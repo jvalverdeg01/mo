@@ -1,0 +1,84 @@
+ * {
+            font-family: 'Fira Sans', sans-serif;
+}
+
+
+#condo_logo {
+    width: 250px;
+    height: 140px;
+    background-image: url(../img/logo.png);
+    background-size: cover;
+    color: white;
+    text-align: right;
+    background-color: #F0F0F0;
+    line-height: 257px;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position-x: 70px;
+    background-position-y: 25px;
+}
+
+#main_menu{
+	position: 	absolute;
+	top: 		0px;
+	left:		-250px;
+	bottom: 	0px;
+	width:		250px;
+	
+	/*background-color: #222225;*/
+	/*background-color: rgba(0,0,0,0.7);*/
+	background-color: #353739;
+    height:100%; 
+	z-index : 10;
+	
+}
+
+
+#main_menu ul {
+	padding: 0;
+	list-style-type: none;
+	margin-top: 1px;
+}
+
+
+
+
+
+#main_menu li {
+	border-bottom: 1px solid #303238;
+	color: white;
+	font-size: 16px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+#modal{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	z-index: 9;
+    background-color: rgba(100,116,126,0.5);
+	display:none;
+	
+}
+
+.nav_li_selected {
+	background-color: white;
+    color: #97CA3A !important;
+    font-weight: bold;
+}
+
+#people_cars{
+	margin-top: 20px;
+}
+
+#slide_menu{
+	position: fixed;
+	left: 0px;
+	top:0px;
+	bottom: 0px;
+	width:10px;
+}
