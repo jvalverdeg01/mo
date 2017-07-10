@@ -246,13 +246,27 @@ input,textarea,select,[contenteditable]{
 }
 
 .card_resource_info {
-         display: inline-block;
+    display: inline-block;
     float: right;
     margin-right: 10px;
-    margin-top: -72px;
+    margin-top: -83px;
     color: gray;
     font-size: 14px;
     width: calc(100% - 136px);
+}
+
+.card_title {
+    color: dimgray;
+    font-weight: 600;
+}
+
+.card_element {
+    display: flex;
+    margin-top: 5px;
+}
+
+.card_element>div {
+    margin-left: 15px;
 }
 
 

@@ -6,16 +6,16 @@
 #condo_logo {
     width: 250px;
     height: 140px;
-    background-image: url(../img/logo.png);
+    background-image: url(../img/logow.png);
     background-size: cover;
     color: white;
     text-align: right;
-    background-color: #F0F0F0;
     line-height: 257px;
     background-size: 100px 100px;
     background-repeat: no-repeat;
     background-position-x: 70px;
     background-position-y: 25px;
+    border-bottom: 5px solid #97CA3A;
 }
 
 #main_menu{
@@ -66,7 +66,7 @@
 }
 
 .nav_li_selected {
-	background-color: white;
+    background-color: white!important;
     color: #97CA3A !important;
     font-weight: bold;
 }
