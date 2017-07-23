@@ -1,0 +1,97 @@
+.btn_next{
+    background: #97ca3a;
+    height: 65px;
+    width: 65px;
+    border-radius: 360pc;
+    position: fixed;
+    bottom: 60px;
+    right: 15px;
+    line-height: 65px !important;
+    color: white;
+    font-size: 30px !important;
+    text-align: center;
+}
+
+.nav2 {
+    padding: 16px;
+    background: white;
+    color: dimgray;
+    height: 34px;
+    font-weight: 900;
+}
+
+.question {
+    height: 61px;
+    background: white;
+    margin-top: 7px;
+    text-align: justify;
+    padding: 16px;
+    color: #97ca3a;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    margin-bottom: 18px;
+}
+
+.tab-listtab {
+    position: absolute;
+    top: 61px;
+    left: 0px;
+    bottom: 10px;
+    right: 0px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.questionOption {
+    height: 40px;
+    background-color: white;
+    margin-top: 5px;
+    padding: 10px;
+    display: flex;
+    line-height: 29px;
+    color: dimgray;
+}
+
+#surveryProgressText {
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+#surveryProgress {
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    background-color: hsla(81, 58%, 75%, 1);
+    width: 100%;
+    text-align: center;
+    color: white;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+#surveryProgressText {
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.progress {
+    background-color: #97ca3a;
+    width: 40%;
+    height: 100%;
+    margin: 0px;
+}
+
+.questionOption label {
+    margin-left: 15px;
+}
