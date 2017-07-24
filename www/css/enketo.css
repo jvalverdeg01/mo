@@ -16,29 +16,47 @@
     padding: 16px;
     background: white;
     color: dimgray;
-    height: 34px;
+    height: 25px;
     font-weight: 900;
 }
 
+.tab-listtab {
+    position: absolute;
+    top: 52px;
+    left: 0px;
+    bottom: 10px;
+    right: 0px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+
 .question {
-    height: 61px;
+    height: 85px;
     background: white;
     margin-top: 7px;
     text-align: justify;
     padding: 16px;
     color: #97ca3a;
     box-shadow: 0 3px 5px rgba(0,0,0,0.2);
-    margin-bottom: 18px;
 }
 
-.tab-listtab {
-    position: absolute;
-    top: 61px;
-    left: 0px;
-    bottom: 10px;
-    right: 0px;
-    overflow: auto;
-    overflow-x: hidden;
+.instructions {
+    height: 36px;
+    background: white;
+    text-align: justify;
+    padding: 16px;
+    color: black;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+.space {
+    height: 35px;
+    background-color: white;
+    margin-top: 5px;
+    display: flex;
+    line-height: 29px;
+    color: dimgray;
 }
 
 .questionOption {
@@ -51,7 +69,7 @@
     color: dimgray;
 }
 
-#surveryProgressText {
+#surveyProgressText {
     position: fixed;
     bottom: 0px;
     height: 50px;
@@ -62,7 +80,7 @@
     font-size: 20px;
 }
 
-#surveryProgress {
+#surveyProgress {
     position: fixed;
     bottom: 0px;
     height: 50px;
@@ -74,7 +92,7 @@
     font-size: 20px;
 }
 
-#surveryProgressText {
+#surveyProgressText {
     position: fixed;
     bottom: 0px;
     height: 50px;

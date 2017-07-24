@@ -100,7 +100,7 @@
 					<div section-name="home" class="section_page section_active">
 						<nav id="bookinNav">
 							<ul class="tablist" tab-group="bookin">
-								<li class="active" tab-target="resource">Amenidades</li>
+								<li class="active" tab-target="resource">Recomendadas</li>
 								<li tab-target="history">Historial</li>
 							
 							</ul>
@@ -175,37 +175,47 @@
 						
 					</div>
 					
-					<div section-name="survery" class="section_page section_active">
-						<nav id="survery" class="nav2">
-								Nombre de escuesta
+					<div section-name="survey" class="section_page section_active">
+						<nav id="survey" class="nav2">
+								Pregunta #
 						</nav>
-												<div class="tab-listtab" tab-name="Chat">
-							<div class="question">
-						Pregunta para hacer numero 1, y varias lineas?
-						</div>
-						<div class="questionOption">
-							<div class="checkbox"></div> <label>Opcion #1</label>
-						</div>
-						<div class="questionOption">
-							 <div class="checkbox chek check"></div> <label>Opcion #2</label>
-						</div>
-						<div class="questionOption">
-							 <div class="checkbox"></div> <label>Opcion #3</label>
+							<div class="tab-listtab" tab-name="Survey">
+								<div class="question">
+								Descripción
+								</div>
+								<div class="instructions">
+								Instrucciones
+								</div>
+								<div class="space">
+								</div>
+								<div class="options">
+									<div class="questionOption">
+										<div class="checkbox"></div> <label>Opcion #1</label>
+									</div>
+									<div class="questionOption">
+										<div class="checkbox chek check"></div> <label>Opcion #2</label>
+									</div>
+									<div class="questionOption">
+										<div class="checkbox"></div> <label>Opcion #3</label>
+									</div>
+									<div class="questionOption">
+										<div class="checkbox"></div> <label>Otros</label>
+									</div>
+								</div>
+
+								<div class="btn_next fa fa-arrow-right"></div>
+
+								<div id="surveyProgress">
+									<div class="progress"></div>
+								</div>
+								<div id="surveyProgressText">1/10</div>
 							</div>
-
-						<div class="btn_next fa fa-arrow-right"></div>
-
-							<div id="surveryProgress">
-							<div class="progress"></div>
-						</div>
-						<div id="surveryProgressText">4/10</div>
-						</div>
 					</div>
 
 					<div section-name="chat" class="section_page">
 						<nav id="ChatNav">
 							<ul class="tablist" tab-group="AdminNav">
-								<li class="active" tab-target="Chat">Chats</li>
+								<li class="active" tab-target="Survey">Chats</li>
 								<li tab-target="Employee">Personal</li>
 								<li tab-target="Department">Grupos</li>
 							</ul>
@@ -661,6 +671,7 @@
 		<script type="text/javascript" src="js/menu.js"></script>
 		<script type="text/javascript" src="js/user.js"></script>
 		<script type="text/javascript" src="js/survey.js"></script>
+		<script type="text/javascript" src="js/page/question.js"></script>
 		
 	
 		<script type="text/javascript" src="js/userConfig.js"></script>
