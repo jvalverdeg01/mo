@@ -1,0 +1,26 @@
+{
+  "id": "uuid",
+  "type": "images",
+  "text": "Descripción de la pregunta",
+  "instructions": "Instrucciones de la pregunta",
+  "minimum_select": 1,
+  "options": [
+    {
+    "id": "image1",
+	"url": "url of image1",
+    "text": "description/optional"
+    },
+	{
+    "id": "image2",
+	"url": "url of image2",
+    "text": "description/optional"
+    }
+  ],
+  "skip_rules": [
+    {
+    "value": "rule_value",
+    "option": "option",
+    "default": true
+    }
+  ]
+}

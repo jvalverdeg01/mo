@@ -1,0 +1,9 @@
+{
+  "id":"uuid",
+  "primaryColor": "color principal",
+  "imageSurvey": "imagen de la encuesta",
+  "surveyName": "nombre de la encuesta",
+  "shelfTime": 11651511,
+  "progressSurvey":"progreso de la encuesta",
+  "earnings":"ganancia" 
+}  

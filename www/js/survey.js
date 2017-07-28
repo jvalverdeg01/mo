@@ -13,7 +13,7 @@ function printRemaning(endTime,nowDate){
 
     // calculate (and subtract) whole minutes
     var minutes = Math.floor(delta / 60) % 60;
-    return days+"d " + hours+"h" + minutes"m"
+    return days+"d " + hours+"h" + minutes+"m"
 }
 
 
