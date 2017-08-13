@@ -1,6 +1,5 @@
 var json_test = {
   "id":"uuid",
-  "primaryColor": "color principal",
   "imageSurvey": "survey1.png",
   "surveyName": "Encuesta de prueba",
   "shelfTime": 11651511,
@@ -24,4 +23,3 @@ function createSurvey(survey){
 	surveyBody.find(".surveyEarnings").html(survey.earnings)
 	
 	recommendedDOM.find(".nice-wrapper").append(surveyBody)
-}         

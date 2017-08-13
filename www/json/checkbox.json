@@ -1,12 +1,13 @@
 {
   "id": "uuid",
+  "type": "checkbox",
   "text": "Descripción de la pregunta",
   "instructions": "Instrucciones de la pregunta",
   "minimum_select": 1,
   "options": [
     {
-    "id": "option_id",
-    "text": "option_text"
+    "value": 1,
+    "text": "Opción 1"
     }
   ],
   "skip_rules": [

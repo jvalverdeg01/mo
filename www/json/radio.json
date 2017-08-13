@@ -6,19 +6,19 @@
   "minimum_select": 1,
   "options": [
     {
-    "id": 2,
+    "value": 2,
     "text": "Opción 1"
     },
 	{
-    "id": 3,
+    "value": 3,
     "text": "Opción 2"
     },
 	{
-    "id": 4,
+    "value": 4,
     "text": "Opción 3"
     },
 	{
-    "id": 5,
+    "value": 5,
     "text": "Opción 4"
     }
   ],

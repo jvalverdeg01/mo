@@ -1,3 +1,42 @@
+var json_test = {
+  "id": "uuid",
+  "type": "checkbox",
+  "text": "Descripción de la pregunta",
+  "instructions": "Instrucciones de la pregunta",
+  "minimum_select": 1,
+  "options": [
+    {
+    "id": 2,
+    "text": "Opción 1"
+    },
+	{
+    "id": 3,
+    "text": "Opción 2"
+    },
+	{
+    "id": 4,
+    "text": "Opción 3"
+    },
+	{
+    "id": 5,
+    "text": "Opción 4"
+    }
+  ],
+  "skip_rules": [
+    {
+    "value": "rule_value",
+    "option": "option",
+    "default": true
+    }
+  ],
+  "other_options": {
+    "placeholder": "text",
+    "min_length": 12,
+    "max_length": 35,
+    "regex": "regular_expression"
+  }
+}
+
 function createQuestion(question){
 	question = json_test; // Para pruebas
 	surveyDOM = $("[section-name=survey]")

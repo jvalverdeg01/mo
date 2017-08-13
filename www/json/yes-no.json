@@ -6,11 +6,11 @@
   "minimum_select": 1,
   "options": [
     {
-    "id": "yes",
+    "value": "yes",
     "text": "Sí"
     },
 	{
-    "id": "no",
+    "value": "no",
     "text": "No"
     }
   ],

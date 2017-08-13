@@ -6,12 +6,12 @@
   "minimum_select": 1,
   "options": [
     {
-    "id": "image1",
+    "value": "image1",
 	"url": "url of image1",
     "text": "description/optional"
     },
 	{
-    "id": "image2",
+    "value": "image2",
 	"url": "url of image2",
     "text": "description/optional"
     }
