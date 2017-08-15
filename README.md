@@ -1,4 +1,4 @@
-# PhoneGap Build Starter Application with Pushwoosh
+# Enketo Survey v.0.1 @ 2017
 
 The app is ready to be uploaded to Phonegap Build. Just make sure you change Pushwoosh App ID in the javascript files after you fork this repo.
 

@@ -2,14 +2,14 @@
   -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
-  user-select: none;          /* Likely future */      
+  user-select: none;          /* Likely future */
 }
 
 input,textarea,select,[contenteditable]{
   -webkit-user-select: text;  /* Chrome all / Safari all */
   -moz-user-select: text;     /* Firefox all */
   -ms-user-select: text;      /* IE 10+ */
-  user-select: text;          /* Likely future */      
+  user-select: text;          /* Likely future */
 }
 
 
@@ -19,7 +19,7 @@ input,textarea,select,[contenteditable]{
 	bottom: 		0px;
 	left: 			0px;
 	right: 			0px;
-	
+
 	background: 	white;
 }
 
@@ -31,14 +31,14 @@ input,textarea,select,[contenteditable]{
 	background: 	#97CA3A;
 	line-height: 	60px;
 	color: 			white;
-}	
+}
 
 #header_menu_btn{
 	font-size: 		30px;
     width: 			30px;
     margin-left: 	15px;
     color: 			white;
-    float: 			left;	
+    float: 			left;
 }
 
 #header_user_btn{
@@ -157,7 +157,7 @@ input,textarea,select,[contenteditable]{
     background: #FFFFFF;
     margin: 10px;
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
-    transition: 0.3s;	
+    transition: 0.3s;
 	overflow: overlay;
 }
 
@@ -180,7 +180,7 @@ input,textarea,select,[contenteditable]{
     bottom: 10px;
     right: 0px;
     overflow: auto;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 .post-cursel{
@@ -208,7 +208,7 @@ input,textarea,select,[contenteditable]{
 }
 
 .card_day_resource_id {
-    
+
     width: 50px;
     height: 100%;
     margin-left: 10px;
@@ -219,7 +219,7 @@ input,textarea,select,[contenteditable]{
     text-align: center;
     color: gray;
 	background-size: 100px;
-	
+
 }
 
 .card_day_table{
@@ -294,7 +294,7 @@ input,textarea,select,[contenteditable]{
 
 .addPerson_select_type_container{
 	margin-left: 20px;
-	
+
 }
 .form{
 	padding-right: 20px;
@@ -358,7 +358,7 @@ input,textarea,select,[contenteditable]{
     float: left;
     margin-right: 20px;
     margin-top: 25px;
-	
+
 	margin-bottom: 25px;
 }
 
@@ -503,8 +503,8 @@ input,textarea,select,[contenteditable]{
 .pick_cursel_day tr:nth-child(1) td {
 	font-size: 16px;
 	text-align: center;
-	
-	
+
+
 }
 .pick_cursel_day tr:nth-child(2) td {
     border-radius: 360px;
@@ -657,13 +657,13 @@ input,textarea,select,[contenteditable]{
 }
 
 .close_modal_btn{
-	
+
     color: white;
     float: right;
     margin: 14px;
     font-size: 25px;
 
-	
+
 }
 
 [contenteditable]:focus {
@@ -696,7 +696,7 @@ input,textarea,select,[contenteditable]{
 }
 
 .nice-wrapper {
-	
+
 }
 
 .nicescroll-rails {
@@ -708,20 +708,68 @@ input,textarea,select,[contenteditable]{
 	background-color: #97CA3A !important;
 	border-radius: 260px !important;
 }
-     
-
-   
 
 
+.merchant_lst_element {
+    height: 150px;
+    background: white;
+    margin: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+}
 
-@-webkit-keyframes 
+.merchant_lst_elemen_header {
+    height: 60px;
+    border-bottom: 4px dashed white;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.merchant_lst_elemen_header_logo {
+    height: 55px;
+    width: 55px;
+    border: 2px solid white;
+    border-radius: 360px;
+}
+
+.merchant_lst_elemen_header_name {
+    color: white;
+}
+
+.merchant_lst_elemen_body {
+    display: flex;
+    padding: 15px;
+    color: dimgray;
+    justify-content: space-between;
+}
+
+.merchant_lst_elemen_body_actions div {
+    font-size: 30px !important;
+    margin-left: 5px;
+}
+
+.merchant_lst_elemen_body>div {
+    flex-wrap: nowrap;
+    flex: 100%;
+    word-spacing: 0px;
+    font-size: 20px !important;
+}
+
+
+
+.merchant_lst_elemen_body>div:before {
+    margin-right: 10px;
+    color: attr(pcolor);
+}
+
+@-webkit-keyframes
 ripple { to {
  -webkit-transform: scale(1.5);
  transform: scale(1.5);
  opacity: 0;
 }
 }
-@keyframes 
+@keyframes
 ripple { to {
  -webkit-transform: scale(1.5);
  transform: scale(1.5);
