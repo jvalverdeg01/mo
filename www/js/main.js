@@ -8,17 +8,12 @@ $(document).on("tapend",".checkbox",function(){
 	$(this).toggleClass("check");
 });
 
-
-
-
 $('.timepicker').tapend(function(e){
-	e.preventDefault(); 
+	e.preventDefault();
 	$('.jasj_time').show().attr("tmr-target",$(this).attr("id"));
 })
 
-
 //$('.timepicker').pickatime()
-
 
 function uuid() {
   var uuid = "", i, random;
@@ -41,7 +36,7 @@ $(function() {
 			cursorwidth: "5px",
 			enableobserver: true
 		});
-		
+
 		observeDOM(this,function(){
 		setTimeout(function(){_this.getNiceScroll().resize()},1000);
 })

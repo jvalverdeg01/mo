@@ -112,14 +112,14 @@
   position      : fixed;
   right         : 15px;
   bottom        : 60px;
-  width         : 65px;
-  height        : 65px;
+  width         : 56px;
+  height        : 56px;
   color         : white;
   border-radius : 360pc;
-  background    : #97ca3a;
+  background    : #05657B;
   text-align    : center;
-  font-size     : 30px !important;
-  line-height   : 65px !important;
+  font-size     : 1.6rem   !important;
+  line-height   : 56px !important;
 }
 
 /* Question */
@@ -222,6 +222,8 @@
   padding       : 10px;
   border-bottom : 4px dashed white;
   border-radius : 8px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .survey_card_header_logo {
@@ -229,6 +231,9 @@
   height        : 55px;
   border        : 2px solid white;
   border-radius : 360px;
+  background-size: 111%;
+  background-position-x: -3px;
+  background-position: -3px;
 }
 
 .survey_card_header_name {
@@ -248,7 +253,7 @@
 }
 
 .survey_card_body>div {
-  font-size    : 20px !important;
+  font-size    : 15px !important;
   flex         : 100%;
   flex-wrap    : nowrap;
   word-spacing : 0px;
@@ -257,4 +262,10 @@
 .survey_card_body>div:before {
   margin-right : 10px;
   color        : attr(pcolor);
+}
+
+.survey_data {
+  padding: 5px 15px 2px 5px;
+  font-size: 12px !important;
+  color: black !important;
 }

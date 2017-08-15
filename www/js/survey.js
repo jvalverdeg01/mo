@@ -36,11 +36,3 @@ function printHeaderSurvey(survey){
                 </div>
         </div>`)
 }
-
-/*
-home = {
-    init : function(){
-        //alert(1)
-    }
-}
-*/

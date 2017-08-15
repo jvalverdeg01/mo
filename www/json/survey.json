@@ -1,9 +1,9 @@
 {
   "id":"uuid",
-  "primaryColor": "color principal",
-  "imageSurvey": "imagen de la encuesta",
-  "surveyName": "nombre de la encuesta",
+  "imageSurvey": "survey1.png",
+  "surveyColor": "#45671",
+  "surveyName": "Prueba exitosa de JSON",
   "shelfTime": 11651511,
-  "progressSurvey":"progreso de la encuesta",
-  "earnings":"ganancia" 
-}  
+  "usersRemaining":"4000/5000",
+  "earnings":"6"
+}
