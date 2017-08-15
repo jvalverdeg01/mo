@@ -23,13 +23,11 @@ function checkPreviusLogin(){
 					if (cordova.platformId == 'android') {
 						StatusBar.backgroundColorByHexString("#4066b3");
 					}
-				})			
+				})
 	}).catch(function(err){
 		  navigator.splashscreen.hide();
 	});
 }
-
-
 
 function logout(){
 
@@ -51,7 +49,7 @@ function socialRegister(auth){
 						uuid : typeof device !== 'undefined' ? device.uuid : "Browser",
 						pushNumber : typeof device !== 'undefined' ? PN : "Browser"
 					}
-					
+
 					_post("/security/register",Object.assign(tempObj,auth),function(data,status){
 						$("#login").fadeOut();
 						if (cordova.platformId == 'android') {
@@ -79,14 +77,14 @@ $("#logout_btn").tapend(function(){
 	showAlert("Cerrar Sessión","Desa cerrar su sessión?",function(){
 		_post("/security/logout",{loginId :loginId},function(data,status){
 			db.destroy().then(function(){	onDeviceReady_db()})
-		
+
 			$("#login").fadeIn();
-			
+
 		},function(e){
 			showInfoD("Error","Algo salio mal, intente luego")
 		})
 	},function(){
-		
+
 	})
 })
 
@@ -94,7 +92,7 @@ $(".login_input input").focus(function(){$("#login_info_txt").html("")})
 
 
 $(".login--Credentials").tapend(function(){
-	if(emailRegEx.test($("#login_user").val())){	
+	if(emailRegEx.test($("#login_user").val())){
 		var tempObj ={
 			user : $("#login_user").val().toLowerCase(),
 			password : HexWhirlpool($("#login_psw").val()),
@@ -112,13 +110,13 @@ $(".login--Credentials").tapend(function(){
 			 loginObj= data
 			  fillUserConfig(data)
 			db.upsert('loginInfo',data).then(function(doc){console.log(doc)})
-		
+
 		},function(e){
 			if(e.status == 401){
 				$("#login_info_txt").html("Bad Credentials")
 			}if(e.status == 402){
 				socialRegister(tempObj)
-				
+
 			}else{
 				console.log(e)
 				//$("#login_info_txt").html(JSON.parse(e.responseText).error)

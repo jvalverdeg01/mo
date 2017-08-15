@@ -2,8 +2,7 @@
             font-family: 'Fira Sans', sans-serif;
 }
 
-
-#condo_logo {
+#enketo_logo {
     width: 250px;
     height: 140px;
     background-image: url(../img/logow.png);
@@ -24,25 +23,20 @@
 	left:		-250px;
 	bottom: 	0px;
 	width:		250px;
-	
+
 	/*background-color: #222225;*/
 	/*background-color: rgba(0,0,0,0.7);*/
 	background-color: #353739;
-    height:100%; 
+    height:100%;
 	z-index : 10;
-	
-}
 
+}
 
 #main_menu ul {
 	padding: 0;
 	list-style-type: none;
 	margin-top: 1px;
 }
-
-
-
-
 
 #main_menu li {
 	border-bottom: 1px solid #303238;
@@ -62,7 +56,7 @@
 	z-index: 9;
     background-color: rgba(100,116,126,0.5);
 	display:none;
-	
+
 }
 
 .nav_li_selected {

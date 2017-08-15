@@ -5,7 +5,7 @@ $(".add_car_btn").tapend(function(){
 })
 
 $("#cancel_people_btn").tapend(function(){
-	showAlert("Cancelar","Desea cancelar la creación del ingreso", 
+	showAlert("Cancelar","Desea cancelar la creación del ingreso",
 		function(){
 			$("[section-target=signInHome]").trigger("tapend")
 		},
@@ -17,7 +17,6 @@ $("#cancel_people_btn").tapend(function(){
 $(document).on("tapend","[car-id]",function(){
 	$("#"+$(this).attr("car-id")).remove()
 })
-
 
 function addPeople(tab,obj){
 	var cardWidth = $(document).innerWidth()-20;
@@ -37,7 +36,7 @@ function addPeople(tab,obj){
 				 <div class="delete_swipe"><i class="fa fa-trash-o" aria-hidden="true"></i></div>\
 			</div>\
 		</div>';
-		
+
 		$("[ tab-name="+tab+"]").append(newCard);
 		makePepleSwipe("#people_"+obj.guestId+" .swipe_area");
 }
@@ -56,7 +55,7 @@ function makePepleSwipe (selector){
 		swipeRight:function(event, direction, distance, duration, fingerCount){
 			$(this).animate({"margin-left" :0+"px"});
 		},
-		
+
 		swipeStatus:function(event, phase, direction, distance, duration, fingers, fingerData, currentDirection){
 			if(direction == "left"){
 				if(distance > 0 & distance < 101){

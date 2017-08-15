@@ -23,11 +23,14 @@
   <link rel="stylesheet" type="text/css" href="lib/select2/css/select2.min.css" />
 
   <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
-  <title>Enketo</title>
+  <title>Enketo Survey</title>
 </head>
 
 <body>
   <canvas id="canvas"></canvas>
+
+<!-- Login Section -->
+
   <div id="login">
     <div id="login_box">
       <div id="login_logo">
@@ -36,47 +39,44 @@
         <input id="login_user" required>
         <span class="highlight"></span>
         <span class="bar"></span>
-        <label>Email</label>
+        <label>Correo electrónico</label>
       </div>
       <div class="login_input">
         <input id="login_psw" type="password" required>
         <span class="highlight"></span>
         <span class="bar"></span>
-        <label>Password</label>
+        <label>Contraseña</label>
       </div>
       <p id="login_info_txt"></p>
       <button class="loginBtn login--Credentials">
-        Login
+        Ingresar
       </button>
       <button class="loginBtn loginBtn--facebook">
-        Login with Facebook
+        Ingresar con Facebook
       </button>
-
       <button class="loginBtn loginBtn--google">
-        Login with Google
+        Ingresar con Google
       </button>
-      <a href="">No puedo accseder a mi cuenta</a>
-      <a href="">Registrar cuenta</a>
-
+      <a href="">Ayuda! No puedo acceder</a>
+      <a href="">Registrarme</a>
 
     </div>
-
-
   </div>
   <div class="app">
     <div id="modal"></div>
     <nav id="main_menu">
-      <div id="condo_logo">
+      <div id="enketo_logo">
       </div>
       <ul>
-        <li class="menu_nav nav_li_selected" section-target="sur_lst"><a>Encuestas</a></li>
+        <li class="menu_nav nav_li_selected" section-target="home"><a>Encuestas</a></li>
         <li class="menu_nav" section-target="history"><a>Historial</a></li>
-        <li class="menu_nav" section-target="myRed"><a>Mi Red</a></li>
+        <li class="menu_nav" section-target="survey"><a>Mi Red</a></li>
         <li class="menu_nav" section-target="wallet"><a>Billetera</a></li>
         <li class="menu_nav" section-target="preference"><a>Preferencias</a></li>
       </ul>
     </nav>
 
+<!-- Workarea start -->
     <section id="workarea">
 
       <header id="header">
@@ -94,34 +94,36 @@
         </div>
       </header>
 
+<!-- Home Section -->
 
-      <div section-name="sur_lst" class="section_page ">
+      <div section-name="home" class="section_page section_active">
 
-        <nav id="directroyNAV" class="chat_action_bar">
-
-          <div class="title">TOdos</div>
-
+        <nav id="surveysNav">
+          <ul class="tablist" tab-group="bookin">
+            <li class="active" tab-target="recommended">Recomendadas</li>
+            <li tab-target="history">Historial</li>
+          </ul>
         </nav>
 
-        <div id="merchant_lst" class="get-nicer togglePanel active">
+        <div id="surveys_list" tab-name="recommended" class="get-nicer togglePanel active">
           <div class="nice-wrapper">
 
-            <div class="merchant_lst_element">
-              <div class="merchant_lst_elemen_header" style="
+            <div class="survey_card">
+              <div class="survey_card_header" style="
 						background-color: #026433;
 						display: flex;
 						justify-content: space-between;
 					">
-                <div class="merchant_lst_elemen_header_logo" style="
+                <div class="survey_card_header_logo" style="
 						background-image: url(http://www.designhill.com/design-blog/wp-content/uploads/2016/03/starbucks-logo-1.jpg);
 						background-size: 111%;
 						background-position-x: -3px;
 						background-position: -3px;
 					"></div>
-                <div class="merchant_lst_elemen_header_name"> Starbucks</div>
+                <div class="survey_card_header_name"> Starbucks</div>
               </div>
 
-              <div class="merchant_lst_elemen_body">
+              <div class="survey_card_body">
 
                 <div class="fa fa-clock-o fa-fw" aria-hidden="true" duedate="timestanp000001">2d 14h</div>
                 <div class="fa fa-usd fa-fw" aria-hidden="true" color="red">6</div>
@@ -131,21 +133,24 @@
             </div>
 
 
-            <div class="merchant_lst_element">
-              <div class="merchant_lst_elemen_header" style="
+            <div class="survey_card">
+              <div class="survey_card_header" style="
 						background-color: #3A167E;
 						display: flex;
 						justify-content: space-between;
 					">
-                <div class="merchant_lst_elemen_header_logo" style="
+                <div class="survey_card_header_logo" style="
 						background-image: url(http://logodatabases.com/wp-content/uploads/2012/01/taco-bell-logo.jpg);
 						background-size: 111%;
 						background-positio;
-						background-position-y: -4px;
-						background-position-x: -1px;
+						background-position-y: -3px;
+						background-position-x: -3px;
 						"></div>
 
-                <div class="merchant_lst_elemen_body">
+                <div class="survey_card_header_name"> Tacobell</div>
+             </div>
+
+                <div class="survey_card_body">
 
                   <div class="fa fa-clock-o fa-fw" aria-hidden="true" duedate="timestanp000001">2d 14h</div>
                   <div class="fa fa-usd fa-fw" aria-hidden="true" color="red">6</div>
@@ -156,23 +161,22 @@
 
             </div>
 
-            <div class="merchant_lst_element">
-              <div class="merchant_lst_elemen_header" style="
+            <div class="survey_card">
+              <div class="survey_card_header" style="
 						background-color: #DF142A;
 						display: flex;
 						justify-content: space-between;
 					">
-                <div class="merchant_lst_elemen_header_logo" style="
+                <div class="survey_card_header_logo" style="
 						background-image: url(https://pbs.twimg.com/profile_images/666277106368671744/C9ITGHyB_400x400.png);
 						background-size: 100%;
-						background-positio;
 						background-position-y: 0px;
 						background-position-x: 0px;
 						"></div>
-                <div class="merchant_lst_elemen_header_name">Macdonalds</div>
+                <div class="survey_card_header_name">Macdonalds</div>
               </div>
 
-              <div class="merchant_lst_elemen_body">
+              <div class="survey_card_body">
 
                 <div class="fa fa-clock-o fa-fw" aria-hidden="true" duedate="timestanp000001">2d 14h</div>
                 <div class="fa fa-usd fa-fw" aria-hidden="true" color="red">6</div>
@@ -183,14 +187,10 @@
 
           </div>
         </div>
-        <div class="search_btn_dirs fa fa-search"> </div>
-        <div class="tags fa fa-tags"> </div>
 
+<!-- ./ Home Section -->
 
-      </div>
-
-
-      <div section-name="home" class="section_page section_active">
+      <div section-name="test" class="section_page">
         <nav id="bookinNav">
           <ul class="tablist" tab-group="bookin">
             <li class="active" tab-target="recommended">Recomendadas</li>
@@ -302,9 +302,9 @@
 
         </div>
 
-      </div>
+      </div> <!-- /.section Home -->
 
-      <div section-name="survey" class="section_page section_active">
+      <div section-name="survey" class="section_page">
         <nav id="survey" class="nav2">
           Pregunta #
         </nav>
@@ -343,7 +343,7 @@
           </div>
           <div id="surveyProgressText">1/10</div>
         </div>
-      </div>
+      </div> <!-- /.section Survey -->
 
       <div section-name="chat" class="section_page">
         <nav id="ChatNav">

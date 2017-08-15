@@ -1,115 +1,260 @@
-.btn_next{
-    background: #97ca3a;
-    height: 65px;
-    width: 65px;
-    border-radius: 360pc;
-    position: fixed;
-    bottom: 60px;
-    right: 15px;
-    line-height: 65px !important;
-    color: white;
-    font-size: 30px !important;
-    text-align: center;
+/* Navigation */
+
+#workarea {
+  position   : absolute;
+  top        : 0px;
+  right      : 0px;
+  bottom     : 0px;
+  left       : 0px;
+  background : white;
+}
+
+#header {
+  width       : 100%;
+  height      : 60px;
+  margin      : 0px;
+  color       : white;
+  background  : #97CA3A;
+  line-height : 60px;
+}
+
+#header_section_description {
+  width      : calc(100% - 85px);
+  float      : left;
+  text-align : center;
+}
+
+.section_page {
+  display    : none;
+  position   : absolute;
+  top        : 60px;
+  bottom     : 0px;
+  width      : 100%;
+  overflow   : auto;
+  background : #F7F7F7;
+}
+
+.section_active {
+  display : block;
+}
+
+.tablist {
+  margin     : 0px;
+  padding    : 0px;
+  background : #FFFFFF;
+  text-align : center;
+  list-style : none;
+}
+
+.tablist>li {
+  display    : inline-block;
+  padding    : 16px;
+  text-align : center;
+}
+
+.tablist>li.active {
+  color         : #97CA3A;
+  border-bottom : 2px solid #97CA3A;
 }
 
 .nav2 {
-    padding: 16px;
-    background: white;
-    color: dimgray;
-    height: 25px;
-    font-weight: 900;
+  height      : 25px;
+  padding     : 16px;
+  color       : dimgray;
+  background  : white;
+  font-weight : 900;
 }
 
 .tab-listtab {
-    position: absolute;
-    top: 52px;
-    left: 0px;
-    bottom: 10px;
-    right: 0px;
-    overflow: auto;
-    overflow-x: hidden;
+  position   : absolute;
+  top        : 52px;
+  right      : 0px;
+  bottom     : 10px;
+  left       : 0px;
+  overflow   : auto;
+  overflow-x : hidden;
 }
 
+.get-nicer {
+  overflow : auto;
+}
+
+.nice-wrapper {}
+
+.nicescroll-rails {
+  width : 2px;
+}
+
+.nicescroll-cursors {
+  border           : none !important;
+  border-radius    : 260px !important;
+  background-color : #97CA3A !important;
+}
+
+/* Buttons */
+
+#header_menu_btn {
+  width       : 30px;
+  float       : left;
+  margin-left : 15px;
+  color       : white;
+  font-size   : 30px;
+}
+
+#header_user_btn {
+  width        : 30px;
+  float        : right;
+  margin-right : 10px;
+  font-size    : 30px;
+}
+
+.btn_next {
+  position      : fixed;
+  right         : 15px;
+  bottom        : 60px;
+  width         : 65px;
+  height        : 65px;
+  color         : white;
+  border-radius : 360pc;
+  background    : #97ca3a;
+  text-align    : center;
+  font-size     : 30px !important;
+  line-height   : 65px !important;
+}
+
+/* Question */
 
 .question {
-    height: 85px;
-    background: white;
-    margin-top: 7px;
-    text-align: justify;
-    padding: 16px;
-    color: #97ca3a;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  height     : 85px;
+  margin-top : 7px;
+  padding    : 16px;
+  color      : #97ca3a;
+  background : white;
+  box-shadow : 0 3px 5px rgba(0,0,0,0.2);
+  text-align : justify;
 }
 
 .instructions {
-    height: 36px;
-    background: white;
-    text-align: justify;
-    padding: 16px;
-    color: black;
-    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  height     : 36px;
+  padding    : 16px;
+  color      : black;
+  background : white;
+  box-shadow : 0 3px 5px rgba(0,0,0,0.2);
+  text-align : justify;
 }
 
 .space {
-    height: 35px;
-    background-color: white;
-    margin-top: 5px;
-    display: flex;
-    line-height: 29px;
-    color: dimgray;
+  display          : flex;
+  height           : 35px;
+  margin-top       : 5px;
+  color            : dimgray;
+  background-color : white;
+  line-height      : 29px;
 }
 
 .questionOption {
-    height: 40px;
-    background-color: white;
-    margin-top: 5px;
-    padding: 10px;
-    display: flex;
-    line-height: 29px;
-    color: dimgray;
+  display          : flex;
+  height           : 40px;
+  margin-top       : 5px;
+  padding          : 10px;
+  color            : dimgray;
+  background-color : white;
+  line-height      : 29px;
 }
 
 #surveyProgressText {
-    position: fixed;
-    bottom: 0px;
-    height: 50px;
-    width: 100%;
-    text-align: center;
-    color: white;
-    line-height: 50px;
-    font-size: 20px;
+  position    : fixed;
+  bottom      : 0px;
+  width       : 100%;
+  height      : 50px;
+  color       : white;
+  text-align  : center;
+  font-size   : 20px;
+  line-height : 50px;
 }
 
 #surveyProgress {
-    position: fixed;
-    bottom: 0px;
-    height: 50px;
-    background-color: hsla(81, 58%, 75%, 1);
-    width: 100%;
-    text-align: center;
-    color: white;
-    line-height: 50px;
-    font-size: 20px;
+  position         : fixed;
+  bottom           : 0px;
+  width            : 100%;
+  height           : 50px;
+  color            : white;
+  background-color : hsla(81, 58%, 75%, 1);
+  text-align       : center;
+  font-size        : 20px;
+  line-height      : 50px;
 }
 
 #surveyProgressText {
-    position: fixed;
-    bottom: 0px;
-    height: 50px;
-    width: 100%;
-    text-align: center;
-    color: white;
-    line-height: 50px;
-    font-size: 20px;
+  position    : fixed;
+  bottom      : 0px;
+  width       : 100%;
+  height      : 50px;
+  color       : white;
+  text-align  : center;
+  font-size   : 20px;
+  line-height : 50px;
 }
 
 .progress {
-    background-color: #97ca3a;
-    width: 40%;
-    height: 100%;
-    margin: 0px;
+  width            : 10%;
+  height           : 100%;
+  margin           : 0px;
+  background-color : #97ca3a;
 }
 
 .questionOption label {
-    margin-left: 15px;
+  margin-left : 15px;
+}
+
+/* Section Encuestas */
+
+.survey_card {
+  height        : 150px;
+  margin        : 10px;
+  border-radius : 6px;
+  background    : white;
+  box-shadow    : 0 2px 12px 0 rgba(0,0,0,0.1);
+}
+
+.survey_card_header {
+  height        : 60px;
+  padding       : 10px;
+  border-bottom : 4px dashed white;
+  border-radius : 8px;
+}
+
+.survey_card_header_logo {
+  width         : 55px;
+  height        : 55px;
+  border        : 2px solid white;
+  border-radius : 360px;
+}
+
+.survey_card_header_name {
+  color : white;
+}
+
+.survey_card_body {
+  display         : flex;
+  padding         : 15px;
+  color           : dimgray;
+  justify-content : space-between;
+}
+
+.survey_card_body_actions div {
+  margin-left : 5px;
+  font-size   : 30px !important;
+}
+
+.survey_card_body>div {
+  font-size    : 20px !important;
+  flex         : 100%;
+  flex-wrap    : nowrap;
+  word-spacing : 0px;
+}
+
+.survey_card_body>div:before {
+  margin-right : 10px;
+  color        : attr(pcolor);
 }

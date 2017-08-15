@@ -1,11 +1,11 @@
 function printRemaning(endTime,nowDate){
-    
+
     var delta = Math.abs(endTime - nowDate) / 1000;
 
     // calculate (and subtract) whole days
     var days = Math.floor(delta / 86400);
     delta -= days * 86400;
-    
+
 
     // calculate (and subtract) whole hours
     var hours = Math.floor(delta / 3600) % 24;
@@ -37,9 +37,10 @@ function printHeaderSurvey(survey){
         </div>`)
 }
 
-
+/*
 home = {
     init : function(){
-        alert(1)
+        //alert(1)
     }
 }
+*/
