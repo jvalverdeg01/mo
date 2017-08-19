@@ -4,7 +4,7 @@ var dataSurvey = {
   "imageSurvey": "starbucks.jpg",
   "surveyColor": "#026433",
   "surveyName": "Starbucks",
-  "shelfTime": 1503119207000,
+  "shelfTime": 1508047200000,
   "progressSurvey":"4000/5000",
   "earnings":"6"
 };
@@ -14,7 +14,7 @@ var dataSurveys = [{
   "imageSurvey": "starbucks.jpg",
   "surveyColor": "#026433",
   "surveyName": "Starbucks",
-  "shelfTime": 1503119207000,
+  "shelfTime": 1504245600000,
   "progressSurvey":"4000/5000",
   "earnings":"6"
 },
@@ -23,7 +23,7 @@ var dataSurveys = [{
   "imageSurvey": "tacobell.jpg",
   "surveyColor": "#3A167E",
   "surveyName": "Tacobell",
-  "shelfTime": 1503119207000,
+  "shelfTime": 1505455200000,
   "progressSurvey":"2000/2500",
   "earnings":"5"
 },

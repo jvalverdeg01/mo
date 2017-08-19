@@ -1,9 +1,20 @@
 {
-  "id":"uuid",
-  "imageSurvey": "survey1.png",
-  "surveyColor": "#45671",
-  "surveyName": "Prueba exitosa de JSON",
-  "shelfTime": 11651511,
-  "usersRemaining":"4000/5000",
-  "earnings":"6"
+  "id": "uuid of the survey",
+  "imageSurvey": "url of the image",
+  "surveyColor": "hexcolor of the survey",
+  "surveyName": "name of the survey",
+  "shelfTime": "timestamp in milliseconds of the endtime",
+  "usersRemaining": "amount of users remaining",
+  "earnings": "amount of USD earnings. Ex: 6",
+  "description": "introduction text of the survey",
+  "rules": [
+    {
+      "id": "close",
+      "value": true
+    },
+    {
+      "id": "order",
+      "value": "random"
+    }
+  ]
 }
