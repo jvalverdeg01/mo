@@ -28,7 +28,7 @@ function createSurvey(survey){
 
   recommendedDOM = $("[tab-name=recommended]") // Recommended surveys tab
 
-	var surveyBody = $('<div class="survey_card" section-target="survey" section-title="" section-fx=""><div class="survey_card_header"><div class="survey_card_header_logo"></div><div class="survey_card_header_name">Nombre de encuesta</div></div><div class="survey_card_body"><div class="fa fa-clock-o fa-fw" aria-hidden="true"><div class="shelfTime survey_data">shelfTime</div></div><div class="fa fa-usd fa-fw" aria-hidden="true"><div class="surveyEarnings survey_data">earnings</div></div><div class="fa fa-user fa-fw" aria-hidden="true"><div class="surveyUsers survey_data">progress</div></div></div></div>')
+	var surveyBody = $('<div class="survey_card" section-id="survey" section-title="" section-fx=""><div class="survey_card_header"><div class="survey_card_header_logo"></div><div class="survey_card_header_name">Nombre de encuesta</div></div><div class="survey_card_body"><div class="fa fa-clock-o fa-fw" aria-hidden="true"><div class="shelfTime survey_data">shelfTime</div></div><div class="fa fa-usd fa-fw" aria-hidden="true"><div class="surveyEarnings survey_data">earnings</div></div><div class="fa fa-user fa-fw" aria-hidden="true"><div class="surveyUsers survey_data">progress</div></div></div></div>')
 
 	surveyBody.attr("id","survey"+survey.id)
 	surveyBody.attr("section-title",survey.surveyName)
@@ -51,5 +51,56 @@ function loadSurveys(surveys){
 
   surveys.forEach(function(survey){
     createSurvey(survey)
+  })
+}
+
+// Receives a rule object
+// Builds the HTML of the survey and appends it to the survey list
+function addRule(rule){
+
+  rulesDOM = $("[section-name=survey]") // Survey tab
+
+	var surveyRules = $('<li><i class="fa" aria-hidden="true"></i><span></span></li>')
+
+  switch(rule.type){
+    case "questions":
+      surveyRules.find("span").html(rule.value+" preguntas")
+      surveyRules.find(".fa").addClass("fa-bars")
+      break;
+
+    case "close":
+      if(rule.value="true"){
+        surveyRules.find("span").html("Si abandona, se pierde la encuesta")
+        surveyRules.find(".fa").addClass("fa-ban")
+      }
+      break;
+
+    case "time":
+      surveyRules.find("span").html(rule.value+" minutos")
+      surveyRules.find(".fa").addClass("fa-clock-o")
+      break;
+
+    default:
+      break;
+  }
+
+	rulesDOM.find(".rules_list").append(surveyRules) // .rules_list is the subcontainer of the rules list
+}
+
+// Receives a survey object
+// Resets the rules list and adds each rule of the survey to the list
+function loadSurveyProfile(survey){
+  surveyProfileDOM = $("[section-name=survey]")
+
+  // Load the survey profile info
+  surveyProfileDOM.find(".survey_profile_description").html(survey.description)
+
+  // Load the survey rules
+  surveyProfileDOM.find(".rules_list").html("")
+
+  surveyRules = survey.rules
+
+  surveyRules.forEach(function(rule){
+    addRule(rule)
   })
 }

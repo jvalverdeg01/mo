@@ -81,7 +81,7 @@
 
       <header id="header">
 
-        <div id="header_menu_btn">
+        <div id="header_menu_btn" class="header-left-btn">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
 
@@ -89,7 +89,7 @@
           Inicio
         </div>
 
-        <div id="header_user_btn">
+        <div id="header_user_btn" class="header-right-btn">
           <i class="fa fa-user" aria-hidden="true"></i>
         </div>
       </header>
@@ -101,7 +101,7 @@
         <nav id="surveysNav">
           <ul class="tablist" tab-group="bookin">
             <li class="active" tab-target="recommended">Recomendadas</li>
-            <li tab-target="history">Historial</li>
+            <li tab-target="incomplete">Incompletas</li>
           </ul>
         </nav>
 
@@ -218,78 +218,6 @@ Aqui va el historial de encuestas
 
 </div> <!-- /.test -->
 
-<!-- Survey section -->
-      <div section-name="survey" class="section_page">
-<div class="survey_profile_header">
-  Descripción
-</div>
-          <div class="survey_profile_description">
-            Descripción
-          </div>
-          <div class="survey_profile_header">
-            Reglas
-          </div>
-          <div class="survey_profile_rules">
-               <ul class="rules_list">
-                   <li>
-                     <i class="fa fa-bars" aria-hidden="true"></i>20 preguntas</li>
-                   <li>
-                     <i class="fa fa-clock-o" aria-hidden="true"></i>5:00 minutos</li>
-                   <li>
-                     <i class="fa fa-ban" aria-hidden="true"></i>Si abandona, se pierde la encuesta</li>
-              </ul>
-          </div>
-          <div class="survey_profile_start">
-                    <div class="start_survey">   <!-- Test method. Change with JS -->
-                     <i class="fa fa-check-circle" section-target="questions" section-title="Starbucks" aria-hidden="true"></i>
-                     <br>
-                     Iniciar encuesta
-                    </div>
-          </div>
-      </div> <!-- /.section Survey -->
-
-<!-- Questions HTML code. Test purposes  -->
-            <div section-name="questions" class="section_page">
-              <nav id="survey" class="nav2">
-                Pregunta #
-              </nav>
-              <div class="tab-listtab" tab-name="survey">
-                <div class="question">
-                  Descripción
-                </div>
-                <div class="instructions">
-                  Instrucciones
-                </div>
-                <div class="space">
-                </div>
-                <div class="options">
-                  <div class="questionOption">
-                    <div class="checkbox"></div>
-                    <label>Opcion #1</label>
-                  </div>
-                  <div class="questionOption">
-                    <div class="checkbox"></div>
-                    <label>Opcion #2</label>
-                  </div>
-                  <div class="questionOption">
-                    <div class="checkbox"></div>
-                    <label>Opcion #3</label>
-                  </div>
-                  <div class="questionOption">
-                    <div class="checkbox"></div>
-                    <label>Otros</label>
-                  </div>
-                </div>
-
-                <div class="btn_next fa fa-arrow-right"></div>
-
-                <div id="surveyProgress">
-                  <div class="progress"></div>
-                </div>
-                <div id="surveyProgressText">1/10</div>
-              </div>
-</div> <!-- /.Questions HTML code. Test purposes -->
-
 <!-- Network Section -->
 
 <div section-name="network" class="section_page">
@@ -312,29 +240,98 @@ Aqui va la pantalla de Pagos
 
 </div> <!-- ./Payment Section -->
 
-      <div section-name="chat" class="section_page">
-        <nav id="ChatNav">
-          <ul class="tablist" tab-group="AdminNav">
-            <li class="active" tab-target="Survey">Chats</li>
-            <li tab-target="Employee">Personal</li>
-            <li tab-target="Department">Grupos</li>
-          </ul>
-        </nav>
-
-        <div class="tab-listtab get-nicer" tab-name="Chat" id="chat_list">
-          <div class="nice-wrapper"></div>
-        </div>
-
-        <div class="tab-listtab get-nicer" tab-name="Employee" id="chat_list_people">
-          <div class="nice-wrapper"></div>
-        </div>
-
-        <div class="tab-listtab get-nicer" tab-name="Department" id="chat_list_group">
-          <div class="nice-wrapper"></div>
-        </div>
-      </div>
-
 </section><!-- End of Workarea -->
+
+<!-- Survey start -->
+    <section id="survey_profile">
+
+      <header id="survey_profile_header">
+
+        <div id="header_menu_btn" class="header-left-btn">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </div>
+
+        <div id="survey_profile_name">
+          Encuesta
+        </div>
+
+        <div id="header_close_survey" class="header-right-btn">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+      </header>
+
+      <!-- Survey section -->
+            <div section-name="survey" class="section_page">
+              <div class="survey_profile_header">
+                Descripción
+              </div>
+              <div class="survey_profile_description">
+                Descripción de la encuesta
+              </div>
+              <div class="survey_profile_header">
+                Reglas
+              </div>
+                <div class="survey_profile_rules">
+                     <ul class="rules_list">
+                         <li>
+                           <i class="fa fa-bars" aria-hidden="true"></i>20 preguntas</li>
+                         <li>
+                           <i class="fa fa-clock-o" aria-hidden="true"></i>5:00 minutos</li>
+                         <li>
+                           <i class="fa fa-ban" aria-hidden="true"></i>Si abandona, se pierde la encuesta</li>
+                    </ul>
+                </div>
+                <div class="survey_profile_start">
+                          <div class="start_survey">   <!-- Test method. Change with JS -->
+                           <i class="fa fa-check-circle" survey-id="questions" aria-hidden="true"></i>
+                           <br>
+                           Iniciar encuesta
+                          </div>
+                </div>
+            </div> <!-- /.section Survey -->
+
+            <!-- Questions HTML code. Test purposes  -->
+                        <div section-name="questions" class="section_page">
+                          <div id="questionNumber" class="question_number">
+                            Pregunta #
+                          </div>
+                          <div class="nice-wrapper">
+                            <div class="question">
+                              Descripción
+                            </div>
+                            <div class="instructions">
+                              Instrucciones
+                            </div>
+                            <div class="options">
+                              <div class="questionOption">
+                                <div class="checkbox"></div>
+                                <label>Opcion #1</label>
+                              </div>
+                              <div class="questionOption">
+                                <div class="checkbox"></div>
+                                <label>Opcion #2</label>
+                              </div>
+                              <div class="questionOption">
+                                <div class="checkbox"></div>
+                                <label>Opcion #3</label>
+                              </div>
+                              <div class="questionOption">
+                                <div class="checkbox"></div>
+                                <label>Otros</label>
+                              </div>
+                            </div>
+
+                            <div class="btn_next fa fa-arrow-right"></div>
+
+                            <div id="surveyProgress">
+                              <div class="progress"></div>
+                            </div>
+                            <div id="surveyProgressText">1/10</div>
+                          </div>
+            </div> <!-- /.Questions HTML code. Test purposes -->
+
+</section>
+
 
     <section id="user_config">
       <h4 class="h4_active_state">Propiedad Activa</h4>
@@ -522,7 +519,6 @@ Aqui va la pantalla de Pagos
   <script type="text/javascript" src="js/dataEnketo.js"></script>
 
 <!-- Enketo -->
-  <script type="text/javascript" src="js/survey.js"></script>
   <script type="text/javascript" src="js/page/question.js"></script>
   <script type="text/javascript" src="js/page/survey.js"></script>
   <script type="text/javascript" src="js/init.js"></script>

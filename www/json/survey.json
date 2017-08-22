@@ -9,12 +9,16 @@
   "description": "introduction text of the survey",
   "rules": [
     {
-      "id": "close",
+      "type": "close",
       "value": true
     },
     {
-      "id": "order",
+      "type": "order",
       "value": "random"
+    },
+    {
+      "type": "length",
+      "value": "20"
     }
   ]
 }
